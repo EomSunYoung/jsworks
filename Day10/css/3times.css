@@ -1,0 +1,11 @@
+body{
+    text-align: center;
+}
+#box{
+    border: solid #fff;
+    width: 600px;
+    margin: 0 auto;
+}
+.red{
+    color: red;
+}
