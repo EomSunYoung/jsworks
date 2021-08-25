@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>지역 범수의 유효 범위</title>
+</head>
+<body>
+    <script>
+        // 1 증가하는 함수 정의
+        var x = 1;  // 전역 변수(전체로 영향을 미치는 변수, 값을 공유)
+        // 프로그램이 종료 되어야 소멸
+        function oneup(){
+            x++;
+            return x;
+        }
+
+        document.write("결과값 : " + oneup());   
+        document.write("<br>결과값 : " + oneup());
+        document.write("<br>결과값 : " + oneup());
+
+        // var x = 2;
+        document.write("<br><br>x = " + x);  
+        // x = 1;
+        // document.write("<br><br>x = " + x); 
+    </script>
+</body>
+</html>
