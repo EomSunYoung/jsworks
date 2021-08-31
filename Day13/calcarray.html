@@ -11,6 +11,7 @@
         var numbers = [];   // 길이가 0인 numbers 배열 선언
         var i;
         var sum = 0;
+        var avg;
 
         // 저장
         numbers[0] = 10;
@@ -34,7 +35,10 @@
             sum += numbers[i];
             // sum = sum + numbers[i]
         }
-        document.write("합계 : " + sum);
+        avg = sum / numbers.length;     // 평균 = 합계 / 개수
+        
+        document.write("합계 : " + sum + '<br>');
+        document.write("평균 : " + avg + '<br>');
     </script>
 </body>
 </html>
