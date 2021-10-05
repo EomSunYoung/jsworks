@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM 노드 추가</title>
+</head>
+<body>
+    <div>
+        <h1>커피 상세 보기</h1>
+        <a href="#" onclick="addimg(); this.onclick='' ">더 보기</a>
+        <div id="info"></div>
+
+        <script>
+            function addimg(){
+                var newP = document.createElement('p');
+                var text = document.createTextNode(
+                    '은은하고 다채로운 꽃향. 망고, 체리. 달달함이 입안 가득.'
+                );
+                newP.append(text);
+                document.getElementById('info').appendChild(newP);
+            }
+        </script>
+    </div>
+</body>
+</html>
